@@ -121,8 +121,8 @@ def data_2_array(dataset):
         data_x.append(dataset[i][0])
         data_y.append(dataset[i][1])
     return np.array(data_x),np.array(data_y)
-train_file = 'cnews/cnews.train.txt'
-test_file = 'cnews/cnews.test.txt'
+train_file = 'data/cnews/cnews.train.txt'
+test_file = 'data/cnews/cnews.test.txt'
 lex = create_lexicon(train_file)
 
 train_x, train_lab = normalize_dataset(lex, train_file)
